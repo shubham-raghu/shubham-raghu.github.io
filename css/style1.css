@@ -9,13 +9,6 @@ tr:nth-child(odd) {background-color: aliceblue;}
 table {
   width: 100%;
 }
-html { 
-  background: url(images/bg.jpg) no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
 #l2{
     background-color:aliceblue;
     width: 50%;
@@ -30,3 +23,19 @@ html {
 .lc {
   text-transform: lowercase;
   }
+body, html {
+  height: 100%;
+}
+
+.bg { 
+  /* The image used */
+  background-image: url("bg.jpg");
+
+  /* Full height */
+  height: 100%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
