@@ -1,9 +1,9 @@
 h1{
-    color: cornflowerblue;
+    color:cornflowerblue;
 }
 th, td {
   padding: 15px;
-  text-align: left;
+  text-align: center;
 }
 tr:nth-child(odd) {background-color: aliceblue;}
 table {
@@ -20,22 +20,37 @@ table {
     font-size: 20px;
     
 }
-.lc {
-  text-transform: lowercase;
-  }
-body, html {
-  height: 100%;
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #A0522D;
 }
 
-.bg { 
-  /* The image used */
-  background-image: url("bg.jpg");
+li {
+  float: left;
+}
 
-  /* Full height */
-  height: 100%; 
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
 
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #333;
+}
+iframe:focus { 
+  outline: none;
+}
+
+iframe[seamless] { 
+  display: block;
 }
